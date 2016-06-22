@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Exercise" syncable="YES">
+        <attribute name="info" optional="YES" attributeType="String" defaultValueString="Exercise info" syncable="YES"/>
+        <attribute name="infoExternalLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Name Of Exercise" syncable="YES"/>
+        <attribute name="numberOfSets" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfSetsCompleted" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="set" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="exercise" inverseEntity="Set" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="exersices" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Set" syncable="YES">
+        <attribute name="dateFinished" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStarted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="repetitions" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="restTimeInSeconds" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="set" inverseEntity="Exercise" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName="." syncable="YES">
+        <attribute name="dateFinished" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStarted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="difficulty" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isWorkoutFinished" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isWorkoutStarted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="staminaPowerRatio" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userWeight" optional="YES" attributeType="Float" minValueString="50" maxValueString="300" defaultValueString="150" syncable="YES"/>
+        <relationship name="exersices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workout" inverseEntity="Exercise" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Workout" positionX="-254" positionY="153" width="128" height="178"/>
+        <element name="Exercise" positionX="-54" positionY="63" width="128" height="148"/>
+        <element name="Set" positionX="-254" positionY="-63" width="128" height="148"/>
+    </elements>
+</model>

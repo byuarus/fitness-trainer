@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042320331D16910500744D77 /* ExerciseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320321D16910500744D77 /* ExerciseHeaderView.m */; };
+		042320361D17024E00744D77 /* FITSetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320351D17024E00744D77 /* FITSetHelper.m */; };
+		042320391D17097500744D77 /* FITWorkoutDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320381D17097500744D77 /* FITWorkoutDefaults.m */; };
+		0423203C1D17706F00744D77 /* ExerciseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */; };
+		042320441D17962200744D77 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 042320431D17962200744D77 /* tick.png */; };
+		042320471D17AB7600744D77 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320461D17AB7600744D77 /* SettingsViewController.m */; };
+		0423204A1D17CA3E00744D77 /* WorkoutListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */; };
+		0423204D1D17CB9700744D77 /* WorkoutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423204C1D17CB9700744D77 /* WorkoutViewCell.m */; };
+		047DCC251D15B24B00EBB005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC241D15B24B00EBB005 /* main.m */; };
+		047DCC281D15B24B00EBB005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC271D15B24B00EBB005 /* AppDelegate.m */; };
+		047DCC2E1D15B24B00EBB005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC2C1D15B24B00EBB005 /* Main.storyboard */; };
+		047DCC311D15B24B00EBB005 /* FitTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC2F1D15B24B00EBB005 /* FitTrainer.xcdatamodeld */; };
+		047DCC331D15B24B00EBB005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC321D15B24B00EBB005 /* Assets.xcassets */; };
+		047DCC361D15B24B00EBB005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC341D15B24B00EBB005 /* LaunchScreen.storyboard */; };
+		047DCC481D15E58D00EBB005 /* FITWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC411D15E58D00EBB005 /* FITWorkout.m */; };
+		047DCC491D15E58D00EBB005 /* FITExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC431D15E58D00EBB005 /* FITExercise.m */; };
+		047DCC4A1D15E58D00EBB005 /* FITSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC451D15E58D00EBB005 /* FITSet.m */; };
+		047DCC4B1D15E58D00EBB005 /* FITUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC471D15E58D00EBB005 /* FITUserDefaults.m */; };
+		047DCC4E1D15E5C400EBB005 /* FITWorkoutDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */; };
+		047DCC531D15EFC700EBB005 /* WorkoutTemplate.json in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC3D1D15D4ED00EBB005 /* WorkoutTemplate.json */; };
+		047DCC571D1625A100EBB005 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC561D1625A100EBB005 /* SetCell.m */; };
+		047DCC5A1D1627D500EBB005 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC591D1627D500EBB005 /* WorkoutViewController.m */; };
+		047DCC5D1D1629E500EBB005 /* FITWorkoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */; };
+		047DCC601D16352100EBB005 /* FITExerciseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042320311D16910500744D77 /* ExerciseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseHeaderView.h; sourceTree = "<group>"; };
+		042320321D16910500744D77 /* ExerciseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseHeaderView.m; sourceTree = "<group>"; };
+		042320341D17024E00744D77 /* FITSetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSetHelper.h; sourceTree = "<group>"; };
+		042320351D17024E00744D77 /* FITSetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSetHelper.m; sourceTree = "<group>"; };
+		042320371D17097500744D77 /* FITWorkoutDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutDefaults.h; path = Classes/FITWorkoutDefaults.h; sourceTree = "<group>"; };
+		042320381D17097500744D77 /* FITWorkoutDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutDefaults.m; path = Classes/FITWorkoutDefaults.m; sourceTree = "<group>"; };
+		0423203A1D17706F00744D77 /* ExerciseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseInfoViewController.h; sourceTree = "<group>"; };
+		0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseInfoViewController.m; sourceTree = "<group>"; };
+		042320431D17962200744D77 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		042320451D17AB7600744D77 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		042320461D17AB7600744D77 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		042320481D17CA3E00744D77 /* WorkoutListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutListCollectionViewController.h; sourceTree = "<group>"; };
+		042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutListCollectionViewController.m; sourceTree = "<group>"; };
+		0423204B1D17CB9700744D77 /* WorkoutViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewCell.h; sourceTree = "<group>"; };
+		0423204C1D17CB9700744D77 /* WorkoutViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewCell.m; sourceTree = "<group>"; };
+		047DCC201D15B24B00EBB005 /* FitTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047DCC241D15B24B00EBB005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		047DCC261D15B24B00EBB005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		047DCC271D15B24B00EBB005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047DCC2D1D15B24B00EBB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047DCC301D15B24B00EBB005 /* FitTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitTrainer.xcdatamodel; sourceTree = "<group>"; };
+		047DCC321D15B24B00EBB005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047DCC351D15B24B00EBB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		047DCC371D15B24B00EBB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047DCC3D1D15D4ED00EBB005 /* WorkoutTemplate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = WorkoutTemplate.json; path = Resources/WorkoutTemplate.json; sourceTree = "<group>"; };
+		047DCC401D15E58D00EBB005 /* FITWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkout.h; path = Classes/FITWorkout.h; sourceTree = "<group>"; };
+		047DCC411D15E58D00EBB005 /* FITWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkout.m; path = Classes/FITWorkout.m; sourceTree = "<group>"; };
+		047DCC421D15E58D00EBB005 /* FITExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITExercise.h; path = Classes/FITExercise.h; sourceTree = "<group>"; };
+		047DCC431D15E58D00EBB005 /* FITExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITExercise.m; path = Classes/FITExercise.m; sourceTree = "<group>"; };
+		047DCC441D15E58D00EBB005 /* FITSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITSet.h; path = Classes/FITSet.h; sourceTree = "<group>"; };
+		047DCC451D15E58D00EBB005 /* FITSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITSet.m; path = Classes/FITSet.m; sourceTree = "<group>"; };
+		047DCC461D15E58D00EBB005 /* FITUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITUserDefaults.h; path = Classes/FITUserDefaults.h; sourceTree = "<group>"; };
+		047DCC471D15E58D00EBB005 /* FITUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITUserDefaults.m; path = Classes/FITUserDefaults.m; sourceTree = "<group>"; };
+		047DCC4C1D15E5C400EBB005 /* FITWorkoutDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutDataManager.h; path = Classes/FITWorkoutDataManager.h; sourceTree = "<group>"; };
+		047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutDataManager.m; path = Classes/FITWorkoutDataManager.m; sourceTree = "<group>"; };
+		047DCC551D1625A100EBB005 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
+		047DCC561D1625A100EBB005 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
+		047DCC581D1627D500EBB005 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
+		047DCC591D1627D500EBB005 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
+		047DCC5B1D1629E500EBB005 /* FITWorkoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutHelper.h; path = Classes/FITWorkoutHelper.h; sourceTree = "<group>"; };
+		047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutHelper.m; path = Classes/FITWorkoutHelper.m; sourceTree = "<group>"; };
+		047DCC5E1D16352100EBB005 /* FITExerciseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITExerciseHelper.h; path = Classes/FITExerciseHelper.h; sourceTree = "<group>"; };
+		047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITExerciseHelper.m; path = Classes/FITExerciseHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047DCC1D1D15B24B00EBB005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047DCC171D15B24B00EBB005 = {
+			isa = PBXGroup;
+			children = (
+				047DCC221D15B24B00EBB005 /* FitTrainer */,
+				047DCC211D15B24B00EBB005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047DCC211D15B24B00EBB005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC201D15B24B00EBB005 /* FitTrainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047DCC221D15B24B00EBB005 /* FitTrainer */ = {
+			isa = PBXGroup;
+			children = (
+				0499E2761D18481D00312713 /* Controllers */,
+				047DCC4F1D15EB0B00EBB005 /* Resources */,
+				047DCC3E1D15E55600EBB005 /* Classes */,
+				0499E2771D18495600312713 /* AppDelegate */,
+				0499E2781D18497800312713 /* StoryBoards */,
+				047DCC231D15B24B00EBB005 /* Supporting Files */,
+			);
+			path = FitTrainer;
+			sourceTree = "<group>";
+		};
+		047DCC231D15B24B00EBB005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC321D15B24B00EBB005 /* Assets.xcassets */,
+				047DCC371D15B24B00EBB005 /* Info.plist */,
+				047DCC2F1D15B24B00EBB005 /* FitTrainer.xcdatamodeld */,
+				042320431D17962200744D77 /* tick.png */,
+				047DCC241D15B24B00EBB005 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047DCC3E1D15E55600EBB005 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC541D16252600EBB005 /* Models */,
+				047DCC4C1D15E5C400EBB005 /* FITWorkoutDataManager.h */,
+				047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */,
+				042320371D17097500744D77 /* FITWorkoutDefaults.h */,
+				042320381D17097500744D77 /* FITWorkoutDefaults.m */,
+				047DCC461D15E58D00EBB005 /* FITUserDefaults.h */,
+				047DCC471D15E58D00EBB005 /* FITUserDefaults.m */,
+				047DCC5B1D1629E500EBB005 /* FITWorkoutHelper.h */,
+				047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */,
+				047DCC5E1D16352100EBB005 /* FITExerciseHelper.h */,
+				047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */,
+				042320341D17024E00744D77 /* FITSetHelper.h */,
+				042320351D17024E00744D77 /* FITSetHelper.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		047DCC4F1D15EB0B00EBB005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC3D1D15D4ED00EBB005 /* WorkoutTemplate.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		047DCC541D16252600EBB005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC401D15E58D00EBB005 /* FITWorkout.h */,
+				047DCC411D15E58D00EBB005 /* FITWorkout.m */,
+				047DCC421D15E58D00EBB005 /* FITExercise.h */,
+				047DCC431D15E58D00EBB005 /* FITExercise.m */,
+				047DCC441D15E58D00EBB005 /* FITSet.h */,
+				047DCC451D15E58D00EBB005 /* FITSet.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0499E2761D18481D00312713 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC551D1625A100EBB005 /* SetCell.h */,
+				047DCC561D1625A100EBB005 /* SetCell.m */,
+				042320311D16910500744D77 /* ExerciseHeaderView.h */,
+				042320321D16910500744D77 /* ExerciseHeaderView.m */,
+				0423204B1D17CB9700744D77 /* WorkoutViewCell.h */,
+				0423204C1D17CB9700744D77 /* WorkoutViewCell.m */,
+				042320451D17AB7600744D77 /* SettingsViewController.h */,
+				042320461D17AB7600744D77 /* SettingsViewController.m */,
+				042320481D17CA3E00744D77 /* WorkoutListCollectionViewController.h */,
+				042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */,
+				0423203A1D17706F00744D77 /* ExerciseInfoViewController.h */,
+				0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */,
+				047DCC581D1627D500EBB005 /* WorkoutViewController.h */,
+				047DCC591D1627D500EBB005 /* WorkoutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0499E2771D18495600312713 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC261D15B24B00EBB005 /* AppDelegate.h */,
+				047DCC271D15B24B00EBB005 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0499E2781D18497800312713 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC341D15B24B00EBB005 /* LaunchScreen.storyboard */,
+				047DCC2C1D15B24B00EBB005 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047DCC1F1D15B24B00EBB005 /* FitTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047DCC3A1D15B24B00EBB005 /* Build configuration list for PBXNativeTarget "FitTrainer" */;
+			buildPhases = (
+				047DCC1C1D15B24B00EBB005 /* Sources */,
+				047DCC1D1D15B24B00EBB005 /* Frameworks */,
+				047DCC1E1D15B24B00EBB005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitTrainer;
+			productName = FitTrainer;
+			productReference = 047DCC201D15B24B00EBB005 /* FitTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047DCC181D15B24B00EBB005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dmytro Malakhov";
+				TargetAttributes = {
+					047DCC1F1D15B24B00EBB005 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 047DCC1B1D15B24B00EBB005 /* Build configuration list for PBXProject "FitTrainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047DCC171D15B24B00EBB005;
+			productRefGroup = 047DCC211D15B24B00EBB005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047DCC1F1D15B24B00EBB005 /* FitTrainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047DCC1E1D15B24B00EBB005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047DCC531D15EFC700EBB005 /* WorkoutTemplate.json in Resources */,
+				042320441D17962200744D77 /* tick.png in Resources */,
+				047DCC361D15B24B00EBB005 /* LaunchScreen.storyboard in Resources */,
+				047DCC331D15B24B00EBB005 /* Assets.xcassets in Resources */,
+				047DCC2E1D15B24B00EBB005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047DCC1C1D15B24B00EBB005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042320331D16910500744D77 /* ExerciseHeaderView.m in Sources */,
+				0423204D1D17CB9700744D77 /* WorkoutViewCell.m in Sources */,
+				047DCC481D15E58D00EBB005 /* FITWorkout.m in Sources */,
+				042320471D17AB7600744D77 /* SettingsViewController.m in Sources */,
+				047DCC4A1D15E58D00EBB005 /* FITSet.m in Sources */,
+				047DCC281D15B24B00EBB005 /* AppDelegate.m in Sources */,
+				042320391D17097500744D77 /* FITWorkoutDefaults.m in Sources */,
+				047DCC4B1D15E58D00EBB005 /* FITUserDefaults.m in Sources */,
+				0423204A1D17CA3E00744D77 /* WorkoutListCollectionViewController.m in Sources */,
+				0423203C1D17706F00744D77 /* ExerciseInfoViewController.m in Sources */,
+				047DCC251D15B24B00EBB005 /* main.m in Sources */,
+				047DCC601D16352100EBB005 /* FITExerciseHelper.m in Sources */,
+				047DCC311D15B24B00EBB005 /* FitTrainer.xcdatamodeld in Sources */,
+				047DCC491D15E58D00EBB005 /* FITExercise.m in Sources */,
+				047DCC5A1D1627D500EBB005 /* WorkoutViewController.m in Sources */,
+				047DCC571D1625A100EBB005 /* SetCell.m in Sources */,
+				047DCC4E1D15E5C400EBB005 /* FITWorkoutDataManager.m in Sources */,
+				042320361D17024E00744D77 /* FITSetHelper.m in Sources */,
+				047DCC5D1D1629E500EBB005 /* FITWorkoutHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		047DCC2C1D15B24B00EBB005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047DCC2D1D15B24B00EBB005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		047DCC341D15B24B00EBB005 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047DCC351D15B24B00EBB005 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047DCC381D15B24B00EBB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		047DCC391D15B24B00EBB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047DCC3B1D15B24B00EBB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.malakhov.FitTrainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		047DCC3C1D15B24B00EBB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.malakhov.FitTrainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047DCC1B1D15B24B00EBB005 /* Build configuration list for PBXProject "FitTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047DCC381D15B24B00EBB005 /* Debug */,
+				047DCC391D15B24B00EBB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047DCC3A1D15B24B00EBB005 /* Build configuration list for PBXNativeTarget "FitTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047DCC3B1D15B24B00EBB005 /* Debug */,
+				047DCC3C1D15B24B00EBB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		047DCC2F1D15B24B00EBB005 /* FitTrainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				047DCC301D15B24B00EBB005 /* FitTrainer.xcdatamodel */,
+			);
+			currentVersion = 047DCC301D15B24B00EBB005 /* FitTrainer.xcdatamodel */;
+			path = FitTrainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 047DCC181D15B24B00EBB005 /* Project object */;
+}
