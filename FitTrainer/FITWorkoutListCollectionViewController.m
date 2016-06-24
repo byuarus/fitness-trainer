@@ -1,29 +1,35 @@
 //
-//  WorkoutListCollectionViewController.m
+//  FITWorkoutListCollectionViewController.m
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "WorkoutListCollectionViewController.h"
-#import "WorkoutViewController.h"
-#import "WorkoutViewCell.h"
-#import "FITWorkoutHelper.h"
+#import "FITWorkoutListCollectionViewController.h"
+#import "FITWorkoutViewController.h"
+#import "FITWorkoutViewCell.h"
+#import "FITWorkout.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
-@interface WorkoutListCollectionViewController ()
+// TODO: change name of constant
+NSString * const reuseIdentifier = @"WorkoutCell";
+
+
+@interface FITWorkoutListCollectionViewController ()
 
 @end
 
-@implementation WorkoutListCollectionViewController
+@implementation FITWorkoutListCollectionViewController{
 
-static NSString * const reuseIdentifier = @"WorkoutCell";
-static NSArray *workoutList;
+NSArray *workoutList;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    workoutList = [[FITWorkoutDataManager instance] workoutList];
+    workoutList = [[FITDataManager sharedInstance] workoutList];
 
     [self.collectionView setDataSource:self];
     [self.collectionView setDelegate:self];
@@ -41,9 +47,9 @@ static NSArray *workoutList;
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(WorkoutViewCell *)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(FITWorkoutViewCell *)sender {
     if ([segue.identifier isEqualToString:@"ShowWorkout"]) {
-        WorkoutViewController *destViewController = segue.destinationViewController;
+        FITWorkoutViewController *destViewController = segue.destinationViewController;
         destViewController.typeOfWorkout = sender.workout.typeOfWorkout;
     }
 
@@ -70,10 +76,11 @@ static NSArray *workoutList;
 
 
 #pragma mark <UICollectionViewDataSource>
-- (void)configureCell:(WorkoutViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
-    FITWorkoutHelper *workout = [FITWorkoutHelper newWorkoutOfType:(NSUInteger)indexPath.item];
+- (void)configureCell:(FITWorkoutViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+    FITWorkout *workout = [FITWorkout newWorkoutOfType:(NSUInteger)indexPath.item];
     cell.workoutName.text = workout.name;
-    cell.workoutImageView.image = workout.image;
+    [cell.workoutImageView sd_setImageWithURL:[NSURL URLWithString:workout.imageURLWithString]
+                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     cell.workout = workout;
 }
 
@@ -89,7 +96,7 @@ static NSArray *workoutList;
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    WorkoutViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    FITWorkoutViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [self configureCell:cell forIndexPath:indexPath];
     return cell;
 }

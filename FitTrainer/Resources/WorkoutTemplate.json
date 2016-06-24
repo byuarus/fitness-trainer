@@ -1,13 +1,5 @@
 {
-    "version": 1,
-    "Defaults":{
-        "levelMax": 30,
-        "restingTimeMax": 180,
-        "restingTimeMin": 20,
-        "repetitionDropRatio": 0.3,
-        "numberOfSetsMin": 3,
-        "numberOfSetsMax": 7
-    },
+    "version": 3,
     "Workouts": [
         {
            "type": 0,
@@ -19,42 +11,62 @@
                      "name":"barbell squat",
                      "info":"Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward. Adopt a hip-width stance with the feet turned out as needed. Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward. Ensure that they stay align with the feet. The goal is to keep the torso as upright as possible. Continue all the way down, keeping the weight on the front of the heel. At the moment the upper legs contact the lower legs reverse the motion, driving the weight upward.",
                      "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/7.gif",
-                     "infoExternalLink":"SW_C1A-rejs",
+                     "youtubeVideoId":"SW_C1A-rejs",
                      "difficulty": 0.5,
                      "repetitionsMin": 3,
                      "repetitionsMax": 7,
                      "weightMin": 100,
-                     "weightMax": 400
-               },{
+                     "weightMax": 400,
+                        "restingTimeMax": 180,
+                        "restingTimeMin": 20,
+                        "repetitionDropRatio": 0.3,
+                        "numberOfSetsMin": 3,
+                        "numberOfSetsMax": 7
+                        },{
                      "name":"barbell deadlift",
                      "info":"Approach the bar so that it is centered over your feet. Your feet should be about hip-width apart. Bend at the hip to grip the bar at shoulder-width allowing your shoulder blades to protract. Typically, you would use an alternating grip. With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head. Keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor.",
                      "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/8.gif",
-                     "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/118000/118911m.mp4",
+                     "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/118000/118911m.mp4",
                      "difficulty": 0.5,
                      "repetitionsMin": 3,
                      "repetitionsMax": 7,
                      "weightMin": 40,
-                     "weightMax": 400
+                        "weightMax": 400,
+                        "restingTimeMax": 180,
+                        "restingTimeMin": 20,
+                        "repetitionDropRatio": 0.3,
+                        "numberOfSetsMin": 3,
+                        "numberOfSetsMax": 7
                },{
                         "name":"leg press",
                         "info":"Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a less-than-shoulder-width narrow stance with the toes slightly pointed out. Your feet should be around 3 inches or less apart. Tip: Keep your head up at all times and also maintain the back on the pad at all times. Lower the safety bars holding the weighted platform in place and press the platform all the way up until your legs are fully extended in front of you. Tip: Make sure that you do not lock your knees. Your torso and the legs should make a perfect 90-degree angle. This will be your starting position. As you inhale, slowly lower the platform until your upper and lower legs make a 90-degree angle. Pushing mainly with the heels of your feet and using the quadriceps go back to the starting position as you exhale. Repeat for the recommended amount of repetitions and ensure to lock the safety pins properly once you are done. You do not want that platform falling on you fully loaded.",
                         "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/7.gif",
-                        "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/40000/41451m.mp4",
+                        "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/40000/41451m.mp4",
                         "difficulty": 0.5,
                         "repetitionsMin": 3,
                         "repetitionsMax": 7,
                         "weightMin": 40,
-                        "weightMax": 400
+                        "weightMax": 400,
+                        "restingTimeMax": 180,
+                        "restingTimeMin": 20,
+                        "repetitionDropRatio": 0.3,
+                        "numberOfSetsMin": 3,
+                        "numberOfSetsMax": 7
                 },{
                         "name":"standing calf raises",
                         "info":"Adjust the padded lever of the calf raise machine to fit your height. Place your shoulders under the pads provided and position your toes facing forward (or using any of the two other positions described at the beginning of the chapter). The balls of your feet should be secured on top of the calf block with the heels extending off it. Push the lever up by extending your hips and knees until your torso is standing erect. The knees should be kept with a slight bend; never locked. Toes should be facing forward, outwards or inwards as described at the beginning of the chapter. This will be your starting position. Raise your heels as you breathe out by extending your ankles as high as possible and flexing your calf. Ensure that the knee is kept stationary at all times. There should be no bending at any time. Hold the contracted position by a second before you start to go back down. Go back slowly to the starting position as you breathe in by lowering your heels as you bend the ankles until calves are stretched. Repeat for the recommended amount of repetitions.",
                         "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/9.gif",
-                        "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/40000/41821m.mp4",
+                        "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/40000/41821m.mp4",
                         "difficulty": 0.5,
                         "repetitionsMin": 3,
                         "repetitionsMax": 7,
                         "weightMin": 40,
-                        "weightMax": 400
+                        "weightMax": 400,
+                        "restingTimeMax": 180,
+                        "restingTimeMin": 20,
+                        "repetitionDropRatio": 0.3,
+                        "numberOfSetsMin": 3,
+                        "numberOfSetsMax": 7
                 }
            ]
         },
@@ -68,32 +80,47 @@
                               "name":"incline barbell bench press",
                               "info":"The incline barbell bench press is an upper body strength exercise that targets the chest, shoulder, and triceps. Performing this move on an incline allows for targeted emphasis on the upper portion of the chest. The incline also makes it safer and more joint-friendly for your shoulders.",
                               "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/1.gif",
-                              "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/116000/117671m.mp4",
+                              "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/116000/117671m.mp4",
                               "difficulty": 0.2,
                               "repetitionsMin": 4,
                               "repetitionsMax": 6,
                               "weightMin": 30,
-                              "weightMax": 300
+                              "weightMax": 300,
+                              "restingTimeMax": 180,
+                              "restingTimeMin": 20,
+                              "repetitionDropRatio": 0.3,
+                              "numberOfSetsMin": 3,
+                              "numberOfSetsMax": 7
                               },{
                               "name":"dumbbell flyes",
                               "info":"Lie down on a flat bench with a dumbbell on each hand resting on top of your thighs. The palms of your hand will be facing each other. Then using your thighs to help raise the dumbbells, lift the dumbbells one at a time so you can hold them in front of you at shoulder width with the palms of your hands facing each other. Raise the dumbbells up like you're pressing them, but stop and hold just before you lock out. This will be your starting position. With a slight bend on your elbows in order to prevent stress at the biceps tendon, lower your arms out at both sides in a wide arc until you feel a stretch on your chest. Breathe in as you perform this portion of the movement. Tip: Keep in mind that throughout the movement, the arms should remain stationary; the movement should only occur at the shoulder joint. Return your arms back to the starting position as you squeeze your chest muscles and breathe out. Tip: Make sure to use the same arc of motion used to lower the weights. Hold for a second at the contracted position and repeat the movement for the prescribed amount of repetitions.",
                               "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/1.gif",
-                              "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/118000/118911m.mp4",
+                              "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/118000/118911m.mp4",
                               "difficulty": 0.5,
                               "repetitionsMin": 2,
                               "repetitionsMax": 5,
                               "weightMin": 10,
-                              "weightMax": 100
+                              "weightMax": 100,
+                              "restingTimeMax": 180,
+                              "restingTimeMin": 20,
+                              "repetitionDropRatio": 0.3,
+                              "numberOfSetsMin": 3,
+                              "numberOfSetsMax": 7
                               },{
                               "name":"leg press",
                               "info":"Start with a dumbbell in each hand and your palms facing your torso. Keep your back straight with a slight bend in the knees and bend forward at the waist. Your torso should be almost parallel to the floor. Make sure to keep your head up. Your upper arms should be close to your torso and parallel to the floor. Your forearms should be pointed towards the floor as you hold the weights. There should be a 90-degree angle formed between your forearm and upper arm. This is your starting position. Now, while keeping your upper arms stationary, exhale and use your triceps to lift the weights until the arm is fully extended. Focus on moving the forearm. After a brief pause at the top contraction, inhale and slowly lower the dumbbells back down to the starting position. Repeat the movement for the prescribed amount of repetitions.",
                               "image":"https://assets.bodybuilding.com/images/trackers/exercise/heatmap/10.gif",
-                              "infoExternalLink":"http://videocdn.bodybuilding.com/video/mp4/40000/41871m.mp4",
+                              "youtubeVideoId":"http://videocdn.bodybuilding.com/video/mp4/40000/41871m.mp4",
                               "difficulty": 0.8,
                               "repetitionsMin": 4,
                               "repetitionsMax": 7,
                               "weightMin": 5,
-                              "weightMax": 100
+                              "weightMax": 100,
+                              "restingTimeMax": 180,
+                              "restingTimeMin": 20,
+                              "repetitionDropRatio": 0.3,
+                              "numberOfSetsMin": 3,
+                              "numberOfSetsMax": 7
                               }
                         ]
                  }

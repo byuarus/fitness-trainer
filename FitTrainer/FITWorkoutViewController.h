@@ -1,5 +1,5 @@
 //
-//  WorkoutViewController.h
+//  FITWorkoutViewController.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WorkoutViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface FITWorkoutViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+
 @property (nonatomic) NSUInteger typeOfWorkout;
+
 @end

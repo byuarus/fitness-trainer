@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FITWorkoutHelper : FITWorkout
+
 @property (strong, nonatomic) UIImage *image;
 
-+ (id)newWorkoutOfType:(NSUInteger)typeOfWorkout;
++ (instancetype)newWorkoutOfType:(NSUInteger)typeOfWorkout;
+
 @end

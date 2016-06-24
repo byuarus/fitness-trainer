@@ -1,5 +1,5 @@
 //
-//  FITWorkoutDataManager.h
+//  FITDataManager.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FITWorkoutDataManager : NSObject
+@interface FITDataManager : NSObject
+
 @property (strong,nonatomic) NSArray *workoutList;
 
-+ (id)instance;
++ (instancetype)sharedInstance;
+
 @end

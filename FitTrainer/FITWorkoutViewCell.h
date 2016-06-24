@@ -1,5 +1,5 @@
 //
-//  WorkoutViewCell.h
+//  FITWorkoutViewCell.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FITWorkoutHelper.h"
+#import "FITWorkout.h"
 
-@interface WorkoutViewCell : UICollectionViewCell
+@interface FITWorkoutViewCell : UICollectionViewCell
+
 @property (strong, nonatomic) IBOutlet UIImageView *workoutImageView;
 @property (strong, nonatomic) IBOutlet UILabel *workoutName;
-@property (strong, nonatomic) FITWorkoutHelper *workout;
+@property (strong, nonatomic) FITWorkout *workout;
+
 @end

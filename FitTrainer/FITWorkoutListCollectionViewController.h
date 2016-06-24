@@ -1,5 +1,5 @@
 //
-//  WorkoutListCollectionViewController.h
+//  FITWorkoutListCollectionViewController.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FITWorkoutDataManager.h"
+#import "FITDataManager.h"
 
 
-@interface WorkoutListCollectionViewController : UICollectionViewController
+@interface FITWorkoutListCollectionViewController : UICollectionViewController
 
 @end

@@ -7,19 +7,19 @@
 //
 
 #import "FITSetHelper.h"
-#import "FITUserDefaults.h"
+#import "FITUser.h"
 #import "FITWorkoutDefaults.h"
 
 
 
-@implementation FITSetHelper
-static FITUserDefaults *userDefault;
-static FITWorkoutDefaults *workoutDefaults;
+@implementation FITSetHelper{
 
+FITUser *userDefault;
+FITWorkoutDefaults *workoutDefaults;
 
-+ (id)setWithExercise:(FITExerciseHelper *)exercise forIndex:(NSUInteger)numberOfSet {
-    userDefault = [FITUserDefaults instance];
-    workoutDefaults = [FITWorkoutDefaults instance];
+}
+
++ (instancetype)setWithExercise:(FITExercise *)exercise forIndex:(NSUInteger)numberOfSet {
     FITSetHelper *set = [[self alloc] init];
     set.restTimeInSeconds = [set restTime];
     set.repetitions = [set repetitionsForExercise:exercise numberOfSet:numberOfSet];
@@ -29,8 +29,8 @@ static FITWorkoutDefaults *workoutDefaults;
 
 
 - (NSUInteger)restTime {
-    CGFloat difficulty = userDefault.difficulty;
-    CGFloat level = userDefault.level;
+    CGFloat difficulty = FITUser.difficulty;
+    CGFloat level = FITUser.level;
     NSUInteger maxLevel = workoutDefaults.levelMax;
     NSUInteger minTimeInSec = workoutDefaults.restingTimeMin;
     NSUInteger maxTimeInSec = workoutDefaults.restingTimeMax;
@@ -39,9 +39,9 @@ static FITWorkoutDefaults *workoutDefaults;
 }
 
 
-- (NSUInteger)repetitionsForExercise:(FITExerciseHelper *)exercise numberOfSet:(NSUInteger)numberOfSet {
+- (NSUInteger)repetitionsForExercise:(FITExercise *)exercise numberOfSet:(NSUInteger)numberOfSet {
     NSUInteger repetitions = exercise.repetitionsMin;
-    repetitions += (NSUInteger)roundf((exercise.repetitionsMax - exercise.repetitionsMin) * (1 - userDefault.staminaPowerRatio) * (0.5 + 0.5 * userDefault.difficulty));
+    repetitions += (NSUInteger)roundf((exercise.repetitionsMax - exercise.repetitionsMin) * (1 - FITUser.staminaPowerRatio) * (0.5 + 0.5 * FITUser.difficulty));
     repetitions = (NSUInteger)roundf(repetitions * (1 - (workoutDefaults.repetitionDropRatio * numberOfSet) / exercise.numberOfSets));
     // To make at least 2 repetition
     repetitions = MAX(repetitions, 2);
@@ -49,13 +49,13 @@ static FITWorkoutDefaults *workoutDefaults;
 }
 
 
-- (NSUInteger)weightForExercise:(FITExerciseHelper *)exercise numberOfSet:(NSUInteger)numberOfSet {
+- (NSUInteger)weightForExercise:(FITExercise *)exercise numberOfSet:(NSUInteger)numberOfSet {
     NSUInteger weight = exercise.weightMin;
-    CGFloat level = userDefault.level;
+    CGFloat level = FITUser.level;
     NSUInteger maxLevel = workoutDefaults.levelMax;
-    CGFloat additionalWeight = (exercise.weightMax - exercise.weightMin) * (0.5 + 0.5 * userDefault.staminaPowerRatio) * (level / maxLevel);
+    CGFloat additionalWeight = (exercise.weightMax - exercise.weightMin) * (0.5 + 0.5 * FITUser.staminaPowerRatio) * (level / maxLevel);
     weight += (NSUInteger)roundf(additionalWeight);
-    weight = (NSUInteger)roundf(weight * userDefault.userWeight / userDefault.userDefaultWeight);
+    weight = (NSUInteger)roundf(weight * FITUser.weight / FITUser.defaultWeight);
     return weight;
 }
 

@@ -1,5 +1,5 @@
 //
-//  ExerciseInfoViewController.h
+//  FITExerciseInfoViewController.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FITExercise.h"
 
-@interface ExerciseInfoViewController : UIViewController
+@interface FITExerciseInfoViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *exerciseNameLable;
 @property (strong, nonatomic) IBOutlet UITextView *exerciseInfoView;
 @property (strong, nonatomic) IBOutlet UIImageView *exerciseImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *exerciseThumbnailView;
 @property (strong, nonatomic) IBOutlet UIWebView *exerciseWebView;
-@property (strong, nonatomic) NSString *exerciseName;
-@property (strong, nonatomic) NSString *exerciseVideoURLString;
-@property (strong, nonatomic) UIImage *exerciseImage;
-@property (strong, nonatomic) NSString *exerciseInfo;
+@property (strong, nonatomic) FITExercise *exercise;
+
 @end

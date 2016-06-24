@@ -7,9 +7,11 @@
 //
 
 #import "FITWorkoutDefaults.h"
+#import "FITExercise.h"
 
 @implementation FITWorkoutDefaults
-+ (id)instance {
+
++ (instancetype)instance {
     static FITWorkoutDefaults *instanceWorkoutDefaults = nil;
     @synchronized(self) {
         if (instanceWorkoutDefaults == nil)
@@ -19,7 +21,7 @@
 }
 
 
-- (id)init {
+- (instancetype)init {
     if (self = [super init]) {
 
     }
@@ -28,12 +30,13 @@
 
 
 - (void)updateWithDictionary:(NSDictionary *)defaultsDictionary {
-    self.levelMax = [defaultsDictionary[@"levelMax"] intValue];
-    self.restingTimeMin = [defaultsDictionary[@"restingTimeMin"] intValue];
-    self.restingTimeMax = [defaultsDictionary[@"restingTimeMax"] intValue];
-    self.numberOfSetsMax = [defaultsDictionary[@"numberOfSetsMax"] intValue];
-    self.numberOfSetsMin = [defaultsDictionary[@"numberOfSetsMin"] intValue];
-    self.repetitionDropRatio = [defaultsDictionary[@"repetitionDropRatio"] floatValue];
+    [FITExercise loadDefaults:defaultsDictionary];
+//    self.levelMax = [defaultsDictionary[@"levelMax"] intValue];
+//    self.restingTimeMin = [defaultsDictionary[@"restingTimeMin"] intValue];
+//    self.restingTimeMax = [defaultsDictionary[@"restingTimeMax"] intValue];
+//    self.numberOfSetsMax = [defaultsDictionary[@"numberOfSetsMax"] intValue];
+//    self.numberOfSetsMin = [defaultsDictionary[@"numberOfSetsMin"] intValue];
+//    self.repetitionDropRatio = [defaultsDictionary[@"repetitionDropRatio"] floatValue];
 }
 
 

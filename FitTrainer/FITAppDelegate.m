@@ -1,30 +1,24 @@
 //
-//  AppDelegate.m
+//  FITAppDelegate.m
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "FITWorkoutDataManager.h"
-#import "FITUserDefaults.h"
+#import "FITAppDelegate.h"
+#import "FITDataManager.h"
+#import "FITUser.h"
 
-@interface AppDelegate ()
+@interface FITAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation FITAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-  
-    //Init and load user defaults to singleton
-    [FITUserDefaults instance];
-    
-    //Init and load local workout data to singleton
-    [FITWorkoutDataManager instance];
 
     return YES;
 }
@@ -50,7 +44,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [[FITUserDefaults instance] save];
+    [FITUser save];
     [self saveContext];
 }
 

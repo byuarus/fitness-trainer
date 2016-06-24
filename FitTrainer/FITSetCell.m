@@ -1,17 +1,16 @@
 //
-//  SetCell.m
+//  FITSetCell.m
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "SetCell.h"
+#import "FITSetCell.h"
 
-@implementation SetCell
+@implementation FITSetCell
 
-
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
 
     }    
@@ -23,6 +22,5 @@
     [super setBounds:bounds];
     self.contentView.frame = bounds;
 }
-
 
 @end

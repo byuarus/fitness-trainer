@@ -26,7 +26,7 @@
         <!--Workout List Collection View Controller-->
         <scene sceneID="F4P-Mt-jAd">
             <objects>
-                <collectionViewController id="iGI-wR-ktf" customClass="WorkoutListCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="iGI-wR-ktf" customClass="FITWorkoutListCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ppZ-0e-2cW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                             <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutCell" id="ktY-yC-N6O" customClass="WorkoutViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutCell" id="ktY-yC-N6O" customClass="FITWorkoutViewCell">
                                 <rect key="frame" x="5" y="64" width="150" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -53,8 +53,8 @@
                                                 <rect key="frame" x="8" y="0.0" width="134" height="192"/>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22U-wB-BCG">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22U-wB-BCG" userLabel="workout lable">
+                                            <rect key="frame" x="0.0" y="151" width="150" height="21"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59172761524822692" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,6 +67,26 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="0.063923947509999995" green="1" blue="0.23954759540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="0ZT-5F-Ym8"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="3UP-kX-WbB"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="3V7-25-fbZ"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="4d2-TF-8ls"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="9Ws-y9-UzV"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="EHh-h1-Fv6"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="Esz-7j-Jx6"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="F1C-le-mnw"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="S59-EJ-Xar"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="SQE-6G-RRh"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="VFa-lH-eCF"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="hm7-oL-Cqk"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="lgj-k6-eE6"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="neB-hl-fts"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="okP-WI-MaM"/>
+                                    <constraint firstAttribute="trailing" secondItem="22U-wB-BCG" secondAttribute="trailing" id="tLd-zg-9Lu"/>
+                                    <constraint firstItem="22U-wB-BCG" firstAttribute="leading" secondItem="ktY-yC-N6O" secondAttribute="leading" id="ulo-Qt-Svr"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="22U-wB-BCG" secondAttribute="bottom" constant="20" id="yfe-iM-Mg6"/>
+                                </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="g10-4L-THZ"/>
@@ -101,12 +121,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVX-eu-jzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1384" y="810.75"/>
+            <point key="canvasLocation" x="-1384" y="810"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="FlH-zj-9AK">
             <objects>
-                <viewController id="LS0-s3-VFy" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="LS0-s3-VFy" customClass="FITSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CEA-cj-E7q"/>
                         <viewControllerLayoutGuide type="bottom" id="ahG-Di-BUR"/>
@@ -373,7 +393,7 @@
         <!--Name Of Workout-->
         <scene sceneID="05m-TY-2Mj">
             <objects>
-                <collectionViewController id="hrE-64-r0D" customClass="WorkoutViewController" sceneMemberID="viewController">
+                <collectionViewController id="hrE-64-r0D" customClass="FITWorkoutViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rib-a3-fba">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,7 +405,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Set Cell" reuseIdentifier="Set Cell" id="IPM-KY-kRd" customClass="SetCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Set Cell" reuseIdentifier="Set Cell" id="IPM-KY-kRd" customClass="FITSetCell">
                                 <rect key="frame" x="0.0" y="105" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -493,7 +513,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="tTZ-A4-BUx" customClass="ExerciseHeaderView">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="tTZ-A4-BUx" customClass="FITExerciseHeaderView">
                             <rect key="frame" x="0.0" y="64" width="600" height="41"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -533,7 +553,7 @@
                                     <attributedString key="userComments">
                                         <fragment content="ADADD">
                                             <attributes>
-                                                <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -601,7 +621,7 @@
         <!--Settings-->
         <scene sceneID="gct-dz-Ncv">
             <objects>
-                <viewController id="LiG-ng-laG" customClass="ExerciseInfoViewController" sceneMemberID="viewController">
+                <viewController id="LiG-ng-laG" customClass="FITExerciseInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7i8-Ck-rBs"/>
                         <viewControllerLayoutGuide type="bottom" id="9N4-uA-3eY"/>

@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042320331D16910500744D77 /* ExerciseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320321D16910500744D77 /* ExerciseHeaderView.m */; };
-		042320361D17024E00744D77 /* FITSetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320351D17024E00744D77 /* FITSetHelper.m */; };
-		042320391D17097500744D77 /* FITWorkoutDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320381D17097500744D77 /* FITWorkoutDefaults.m */; };
-		0423203C1D17706F00744D77 /* ExerciseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */; };
+		042320331D16910500744D77 /* FITExerciseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320321D16910500744D77 /* FITExerciseHeaderView.m */; };
+		0423203C1D17706F00744D77 /* FITExerciseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423203B1D17706F00744D77 /* FITExerciseInfoViewController.m */; };
 		042320441D17962200744D77 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 042320431D17962200744D77 /* tick.png */; };
-		042320471D17AB7600744D77 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320461D17AB7600744D77 /* SettingsViewController.m */; };
-		0423204A1D17CA3E00744D77 /* WorkoutListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */; };
-		0423204D1D17CB9700744D77 /* WorkoutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423204C1D17CB9700744D77 /* WorkoutViewCell.m */; };
+		042320471D17AB7600744D77 /* FITSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320461D17AB7600744D77 /* FITSettingsViewController.m */; };
+		0423204A1D17CA3E00744D77 /* FITWorkoutListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042320491D17CA3E00744D77 /* FITWorkoutListCollectionViewController.m */; };
+		0423204D1D17CB9700744D77 /* FITWorkoutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423204C1D17CB9700744D77 /* FITWorkoutViewCell.m */; };
 		047DCC251D15B24B00EBB005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC241D15B24B00EBB005 /* main.m */; };
-		047DCC281D15B24B00EBB005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC271D15B24B00EBB005 /* AppDelegate.m */; };
+		047DCC281D15B24B00EBB005 /* FITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC271D15B24B00EBB005 /* FITAppDelegate.m */; };
 		047DCC2E1D15B24B00EBB005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC2C1D15B24B00EBB005 /* Main.storyboard */; };
 		047DCC311D15B24B00EBB005 /* FitTrainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC2F1D15B24B00EBB005 /* FitTrainer.xcdatamodeld */; };
 		047DCC331D15B24B00EBB005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC321D15B24B00EBB005 /* Assets.xcassets */; };
@@ -24,35 +22,31 @@
 		047DCC481D15E58D00EBB005 /* FITWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC411D15E58D00EBB005 /* FITWorkout.m */; };
 		047DCC491D15E58D00EBB005 /* FITExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC431D15E58D00EBB005 /* FITExercise.m */; };
 		047DCC4A1D15E58D00EBB005 /* FITSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC451D15E58D00EBB005 /* FITSet.m */; };
-		047DCC4B1D15E58D00EBB005 /* FITUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC471D15E58D00EBB005 /* FITUserDefaults.m */; };
-		047DCC4E1D15E5C400EBB005 /* FITWorkoutDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */; };
+		047DCC4B1D15E58D00EBB005 /* FITUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC471D15E58D00EBB005 /* FITUser.m */; };
+		047DCC4E1D15E5C400EBB005 /* FITDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC4D1D15E5C400EBB005 /* FITDataManager.m */; };
 		047DCC531D15EFC700EBB005 /* WorkoutTemplate.json in Resources */ = {isa = PBXBuildFile; fileRef = 047DCC3D1D15D4ED00EBB005 /* WorkoutTemplate.json */; };
-		047DCC571D1625A100EBB005 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC561D1625A100EBB005 /* SetCell.m */; };
-		047DCC5A1D1627D500EBB005 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC591D1627D500EBB005 /* WorkoutViewController.m */; };
-		047DCC5D1D1629E500EBB005 /* FITWorkoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */; };
-		047DCC601D16352100EBB005 /* FITExerciseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */; };
+		047DCC571D1625A100EBB005 /* FITSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC561D1625A100EBB005 /* FITSetCell.m */; };
+		047DCC5A1D1627D500EBB005 /* FITWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047DCC591D1627D500EBB005 /* FITWorkoutViewController.m */; };
+		048167661D1D10F2006D83C5 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 048167651D1D10F2006D83C5 /* placeholder.png */; };
+		96CF3262FD4A18E6F1D42EF5 /* libPods-FitTrainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 666AE0A4B128113294B8AE46 /* libPods-FitTrainer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		042320311D16910500744D77 /* ExerciseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseHeaderView.h; sourceTree = "<group>"; };
-		042320321D16910500744D77 /* ExerciseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseHeaderView.m; sourceTree = "<group>"; };
-		042320341D17024E00744D77 /* FITSetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSetHelper.h; sourceTree = "<group>"; };
-		042320351D17024E00744D77 /* FITSetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSetHelper.m; sourceTree = "<group>"; };
-		042320371D17097500744D77 /* FITWorkoutDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutDefaults.h; path = Classes/FITWorkoutDefaults.h; sourceTree = "<group>"; };
-		042320381D17097500744D77 /* FITWorkoutDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutDefaults.m; path = Classes/FITWorkoutDefaults.m; sourceTree = "<group>"; };
-		0423203A1D17706F00744D77 /* ExerciseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseInfoViewController.h; sourceTree = "<group>"; };
-		0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseInfoViewController.m; sourceTree = "<group>"; };
+		042320311D16910500744D77 /* FITExerciseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITExerciseHeaderView.h; sourceTree = "<group>"; };
+		042320321D16910500744D77 /* FITExerciseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITExerciseHeaderView.m; sourceTree = "<group>"; };
+		0423203A1D17706F00744D77 /* FITExerciseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITExerciseInfoViewController.h; sourceTree = "<group>"; };
+		0423203B1D17706F00744D77 /* FITExerciseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITExerciseInfoViewController.m; sourceTree = "<group>"; };
 		042320431D17962200744D77 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
-		042320451D17AB7600744D77 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		042320461D17AB7600744D77 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		042320481D17CA3E00744D77 /* WorkoutListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutListCollectionViewController.h; sourceTree = "<group>"; };
-		042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutListCollectionViewController.m; sourceTree = "<group>"; };
-		0423204B1D17CB9700744D77 /* WorkoutViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewCell.h; sourceTree = "<group>"; };
-		0423204C1D17CB9700744D77 /* WorkoutViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewCell.m; sourceTree = "<group>"; };
+		042320451D17AB7600744D77 /* FITSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSettingsViewController.h; sourceTree = "<group>"; };
+		042320461D17AB7600744D77 /* FITSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSettingsViewController.m; sourceTree = "<group>"; };
+		042320481D17CA3E00744D77 /* FITWorkoutListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITWorkoutListCollectionViewController.h; sourceTree = "<group>"; };
+		042320491D17CA3E00744D77 /* FITWorkoutListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITWorkoutListCollectionViewController.m; sourceTree = "<group>"; };
+		0423204B1D17CB9700744D77 /* FITWorkoutViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITWorkoutViewCell.h; sourceTree = "<group>"; };
+		0423204C1D17CB9700744D77 /* FITWorkoutViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITWorkoutViewCell.m; sourceTree = "<group>"; };
 		047DCC201D15B24B00EBB005 /* FitTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047DCC241D15B24B00EBB005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		047DCC261D15B24B00EBB005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		047DCC271D15B24B00EBB005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047DCC261D15B24B00EBB005 /* FITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FITAppDelegate.h; sourceTree = "<group>"; };
+		047DCC271D15B24B00EBB005 /* FITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FITAppDelegate.m; sourceTree = "<group>"; };
 		047DCC2D1D15B24B00EBB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		047DCC301D15B24B00EBB005 /* FitTrainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitTrainer.xcdatamodel; sourceTree = "<group>"; };
 		047DCC321D15B24B00EBB005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,18 +59,19 @@
 		047DCC431D15E58D00EBB005 /* FITExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITExercise.m; path = Classes/FITExercise.m; sourceTree = "<group>"; };
 		047DCC441D15E58D00EBB005 /* FITSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITSet.h; path = Classes/FITSet.h; sourceTree = "<group>"; };
 		047DCC451D15E58D00EBB005 /* FITSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITSet.m; path = Classes/FITSet.m; sourceTree = "<group>"; };
-		047DCC461D15E58D00EBB005 /* FITUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITUserDefaults.h; path = Classes/FITUserDefaults.h; sourceTree = "<group>"; };
-		047DCC471D15E58D00EBB005 /* FITUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITUserDefaults.m; path = Classes/FITUserDefaults.m; sourceTree = "<group>"; };
-		047DCC4C1D15E5C400EBB005 /* FITWorkoutDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutDataManager.h; path = Classes/FITWorkoutDataManager.h; sourceTree = "<group>"; };
-		047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutDataManager.m; path = Classes/FITWorkoutDataManager.m; sourceTree = "<group>"; };
-		047DCC551D1625A100EBB005 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCell.h; sourceTree = "<group>"; };
-		047DCC561D1625A100EBB005 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCell.m; sourceTree = "<group>"; };
-		047DCC581D1627D500EBB005 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
-		047DCC591D1627D500EBB005 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
-		047DCC5B1D1629E500EBB005 /* FITWorkoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITWorkoutHelper.h; path = Classes/FITWorkoutHelper.h; sourceTree = "<group>"; };
-		047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITWorkoutHelper.m; path = Classes/FITWorkoutHelper.m; sourceTree = "<group>"; };
-		047DCC5E1D16352100EBB005 /* FITExerciseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITExerciseHelper.h; path = Classes/FITExerciseHelper.h; sourceTree = "<group>"; };
-		047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITExerciseHelper.m; path = Classes/FITExerciseHelper.m; sourceTree = "<group>"; };
+		047DCC461D15E58D00EBB005 /* FITUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITUser.h; path = Classes/FITUser.h; sourceTree = "<group>"; };
+		047DCC471D15E58D00EBB005 /* FITUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITUser.m; path = Classes/FITUser.m; sourceTree = "<group>"; };
+		047DCC4C1D15E5C400EBB005 /* FITDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FITDataManager.h; path = Classes/FITDataManager.h; sourceTree = "<group>"; };
+		047DCC4D1D15E5C400EBB005 /* FITDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FITDataManager.m; path = Classes/FITDataManager.m; sourceTree = "<group>"; };
+		047DCC551D1625A100EBB005 /* FITSetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSetCell.h; sourceTree = "<group>"; };
+		047DCC561D1625A100EBB005 /* FITSetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSetCell.m; sourceTree = "<group>"; };
+		047DCC581D1627D500EBB005 /* FITWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITWorkoutViewController.h; sourceTree = "<group>"; };
+		047DCC591D1627D500EBB005 /* FITWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITWorkoutViewController.m; sourceTree = "<group>"; };
+		048167641D1CDFDB006D83C5 /* Defaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Defaults.h; path = Classes/Defaults.h; sourceTree = "<group>"; };
+		048167651D1D10F2006D83C5 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Resources/placeholder.png; sourceTree = "<group>"; };
+		440413B9FBADE3C94954D93A /* Pods-FitTrainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTrainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitTrainer/Pods-FitTrainer.debug.xcconfig"; sourceTree = "<group>"; };
+		666AE0A4B128113294B8AE46 /* libPods-FitTrainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FitTrainer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57915E38D17059D02B3FAE9 /* Pods-FitTrainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTrainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitTrainer/Pods-FitTrainer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +79,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CF3262FD4A18E6F1D42EF5 /* libPods-FitTrainer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045C561D1D1B7263008ADB6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				047DCC551D1625A100EBB005 /* FITSetCell.h */,
+				047DCC561D1625A100EBB005 /* FITSetCell.m */,
+				042320311D16910500744D77 /* FITExerciseHeaderView.h */,
+				042320321D16910500744D77 /* FITExerciseHeaderView.m */,
+				0423204B1D17CB9700744D77 /* FITWorkoutViewCell.h */,
+				0423204C1D17CB9700744D77 /* FITWorkoutViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		047DCC171D15B24B00EBB005 = {
 			isa = PBXGroup;
 			children = (
 				047DCC221D15B24B00EBB005 /* FitTrainer */,
 				047DCC211D15B24B00EBB005 /* Products */,
+				7CE500DAEEF7CD240EC3F3CD /* Pods */,
+				6D4A2D0B34881A7FE240DE83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +120,13 @@
 		047DCC221D15B24B00EBB005 /* FitTrainer */ = {
 			isa = PBXGroup;
 			children = (
-				0499E2761D18481D00312713 /* Controllers */,
-				047DCC4F1D15EB0B00EBB005 /* Resources */,
-				047DCC3E1D15E55600EBB005 /* Classes */,
 				0499E2771D18495600312713 /* AppDelegate */,
+				0499E2761D18481D00312713 /* Controllers */,
+				047DCC3E1D15E55600EBB005 /* Models */,
 				0499E2781D18497800312713 /* StoryBoards */,
 				047DCC231D15B24B00EBB005 /* Supporting Files */,
+				047DCC4F1D15EB0B00EBB005 /* Resources */,
+				045C561D1D1B7263008ADB6B /* Views */,
 			);
 			path = FitTrainer;
 			sourceTree = "<group>";
@@ -127,68 +139,48 @@
 				047DCC2F1D15B24B00EBB005 /* FitTrainer.xcdatamodeld */,
 				042320431D17962200744D77 /* tick.png */,
 				047DCC241D15B24B00EBB005 /* main.m */,
+				048167641D1CDFDB006D83C5 /* Defaults.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		047DCC3E1D15E55600EBB005 /* Classes */ = {
+		047DCC3E1D15E55600EBB005 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				047DCC541D16252600EBB005 /* Models */,
-				047DCC4C1D15E5C400EBB005 /* FITWorkoutDataManager.h */,
-				047DCC4D1D15E5C400EBB005 /* FITWorkoutDataManager.m */,
-				042320371D17097500744D77 /* FITWorkoutDefaults.h */,
-				042320381D17097500744D77 /* FITWorkoutDefaults.m */,
-				047DCC461D15E58D00EBB005 /* FITUserDefaults.h */,
-				047DCC471D15E58D00EBB005 /* FITUserDefaults.m */,
-				047DCC5B1D1629E500EBB005 /* FITWorkoutHelper.h */,
-				047DCC5C1D1629E500EBB005 /* FITWorkoutHelper.m */,
-				047DCC5E1D16352100EBB005 /* FITExerciseHelper.h */,
-				047DCC5F1D16352100EBB005 /* FITExerciseHelper.m */,
-				042320341D17024E00744D77 /* FITSetHelper.h */,
-				042320351D17024E00744D77 /* FITSetHelper.m */,
+				047DCC4C1D15E5C400EBB005 /* FITDataManager.h */,
+				047DCC4D1D15E5C400EBB005 /* FITDataManager.m */,
+				047DCC421D15E58D00EBB005 /* FITExercise.h */,
+				047DCC431D15E58D00EBB005 /* FITExercise.m */,
+				047DCC441D15E58D00EBB005 /* FITSet.h */,
+				047DCC451D15E58D00EBB005 /* FITSet.m */,
+				047DCC461D15E58D00EBB005 /* FITUser.h */,
+				047DCC471D15E58D00EBB005 /* FITUser.m */,
+				047DCC401D15E58D00EBB005 /* FITWorkout.h */,
+				047DCC411D15E58D00EBB005 /* FITWorkout.m */,
 			);
-			name = Classes;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		047DCC4F1D15EB0B00EBB005 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				048167651D1D10F2006D83C5 /* placeholder.png */,
 				047DCC3D1D15D4ED00EBB005 /* WorkoutTemplate.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		047DCC541D16252600EBB005 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				047DCC401D15E58D00EBB005 /* FITWorkout.h */,
-				047DCC411D15E58D00EBB005 /* FITWorkout.m */,
-				047DCC421D15E58D00EBB005 /* FITExercise.h */,
-				047DCC431D15E58D00EBB005 /* FITExercise.m */,
-				047DCC441D15E58D00EBB005 /* FITSet.h */,
-				047DCC451D15E58D00EBB005 /* FITSet.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		0499E2761D18481D00312713 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				047DCC551D1625A100EBB005 /* SetCell.h */,
-				047DCC561D1625A100EBB005 /* SetCell.m */,
-				042320311D16910500744D77 /* ExerciseHeaderView.h */,
-				042320321D16910500744D77 /* ExerciseHeaderView.m */,
-				0423204B1D17CB9700744D77 /* WorkoutViewCell.h */,
-				0423204C1D17CB9700744D77 /* WorkoutViewCell.m */,
-				042320451D17AB7600744D77 /* SettingsViewController.h */,
-				042320461D17AB7600744D77 /* SettingsViewController.m */,
-				042320481D17CA3E00744D77 /* WorkoutListCollectionViewController.h */,
-				042320491D17CA3E00744D77 /* WorkoutListCollectionViewController.m */,
-				0423203A1D17706F00744D77 /* ExerciseInfoViewController.h */,
-				0423203B1D17706F00744D77 /* ExerciseInfoViewController.m */,
-				047DCC581D1627D500EBB005 /* WorkoutViewController.h */,
-				047DCC591D1627D500EBB005 /* WorkoutViewController.m */,
+				0423203A1D17706F00744D77 /* FITExerciseInfoViewController.h */,
+				0423203B1D17706F00744D77 /* FITExerciseInfoViewController.m */,
+				042320451D17AB7600744D77 /* FITSettingsViewController.h */,
+				042320461D17AB7600744D77 /* FITSettingsViewController.m */,
+				042320481D17CA3E00744D77 /* FITWorkoutListCollectionViewController.h */,
+				042320491D17CA3E00744D77 /* FITWorkoutListCollectionViewController.m */,
+				047DCC581D1627D500EBB005 /* FITWorkoutViewController.h */,
+				047DCC591D1627D500EBB005 /* FITWorkoutViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -196,8 +188,8 @@
 		0499E2771D18495600312713 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				047DCC261D15B24B00EBB005 /* AppDelegate.h */,
-				047DCC271D15B24B00EBB005 /* AppDelegate.m */,
+				047DCC261D15B24B00EBB005 /* FITAppDelegate.h */,
+				047DCC271D15B24B00EBB005 /* FITAppDelegate.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -211,6 +203,23 @@
 			name = StoryBoards;
 			sourceTree = "<group>";
 		};
+		6D4A2D0B34881A7FE240DE83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666AE0A4B128113294B8AE46 /* libPods-FitTrainer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CE500DAEEF7CD240EC3F3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				440413B9FBADE3C94954D93A /* Pods-FitTrainer.debug.xcconfig */,
+				C57915E38D17059D02B3FAE9 /* Pods-FitTrainer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047DCC3A1D15B24B00EBB005 /* Build configuration list for PBXNativeTarget "FitTrainer" */;
 			buildPhases = (
+				D3311210164BE9206B4DBB86 /* [CP] Check Pods Manifest.lock */,
 				047DCC1C1D15B24B00EBB005 /* Sources */,
 				047DCC1D1D15B24B00EBB005 /* Frameworks */,
 				047DCC1E1D15B24B00EBB005 /* Resources */,
+				DD7002AC88A6D9FE53DB8F59 /* [CP] Embed Pods Frameworks */,
+				28AA931877CDF50ACA6846D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047DCC531D15EFC700EBB005 /* WorkoutTemplate.json in Resources */,
+				048167661D1D10F2006D83C5 /* placeholder.png in Resources */,
 				042320441D17962200744D77 /* tick.png in Resources */,
 				047DCC361D15B24B00EBB005 /* LaunchScreen.storyboard in Resources */,
 				047DCC331D15B24B00EBB005 /* Assets.xcassets in Resources */,
@@ -278,30 +291,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28AA931877CDF50ACA6846D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitTrainer/Pods-FitTrainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3311210164BE9206B4DBB86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD7002AC88A6D9FE53DB8F59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitTrainer/Pods-FitTrainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		047DCC1C1D15B24B00EBB005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042320331D16910500744D77 /* ExerciseHeaderView.m in Sources */,
-				0423204D1D17CB9700744D77 /* WorkoutViewCell.m in Sources */,
+				042320331D16910500744D77 /* FITExerciseHeaderView.m in Sources */,
+				0423204D1D17CB9700744D77 /* FITWorkoutViewCell.m in Sources */,
 				047DCC481D15E58D00EBB005 /* FITWorkout.m in Sources */,
-				042320471D17AB7600744D77 /* SettingsViewController.m in Sources */,
+				042320471D17AB7600744D77 /* FITSettingsViewController.m in Sources */,
 				047DCC4A1D15E58D00EBB005 /* FITSet.m in Sources */,
-				047DCC281D15B24B00EBB005 /* AppDelegate.m in Sources */,
-				042320391D17097500744D77 /* FITWorkoutDefaults.m in Sources */,
-				047DCC4B1D15E58D00EBB005 /* FITUserDefaults.m in Sources */,
-				0423204A1D17CA3E00744D77 /* WorkoutListCollectionViewController.m in Sources */,
-				0423203C1D17706F00744D77 /* ExerciseInfoViewController.m in Sources */,
+				047DCC281D15B24B00EBB005 /* FITAppDelegate.m in Sources */,
+				047DCC4B1D15E58D00EBB005 /* FITUser.m in Sources */,
+				0423204A1D17CA3E00744D77 /* FITWorkoutListCollectionViewController.m in Sources */,
+				0423203C1D17706F00744D77 /* FITExerciseInfoViewController.m in Sources */,
 				047DCC251D15B24B00EBB005 /* main.m in Sources */,
-				047DCC601D16352100EBB005 /* FITExerciseHelper.m in Sources */,
 				047DCC311D15B24B00EBB005 /* FitTrainer.xcdatamodeld in Sources */,
 				047DCC491D15E58D00EBB005 /* FITExercise.m in Sources */,
-				047DCC5A1D1627D500EBB005 /* WorkoutViewController.m in Sources */,
-				047DCC571D1625A100EBB005 /* SetCell.m in Sources */,
-				047DCC4E1D15E5C400EBB005 /* FITWorkoutDataManager.m in Sources */,
-				042320361D17024E00744D77 /* FITSetHelper.m in Sources */,
-				047DCC5D1D1629E500EBB005 /* FITWorkoutHelper.m in Sources */,
+				047DCC5A1D1627D500EBB005 /* FITWorkoutViewController.m in Sources */,
+				047DCC571D1625A100EBB005 /* FITSetCell.m in Sources */,
+				047DCC4E1D15E5C400EBB005 /* FITDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +468,7 @@
 		};
 		047DCC3B1D15B24B00EBB005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440413B9FBADE3C94954D93A /* Pods-FitTrainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FitTrainer/Info.plist;
@@ -422,6 +480,7 @@
 		};
 		047DCC3C1D15B24B00EBB005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57915E38D17059D02B3FAE9 /* Pods-FitTrainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FitTrainer/Info.plist;

@@ -8,11 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FITWorkout.h"
+@class FITExercise;
+
 @interface FITSet : NSObject
+
 @property (nonatomic) NSUInteger weight;
 @property (nonatomic) NSUInteger repetitions;
 @property (nonatomic) NSTimeInterval restTimeInSeconds;
-@property (nonatomic) BOOL isComplete;
+@property (nonatomic, getter=isComplete) BOOL complete;
 @property (strong, nonatomic) NSDate *setTimeStarted;
 @property (strong, nonatomic) NSDate *setTimeFinnished;
+@property (strong, nonatomic) FITExercise *exercise;
+
++ (instancetype)setWithExercise:(FITExercise *)exercise forIndex:(NSUInteger)numberOfSet;
+
 @end

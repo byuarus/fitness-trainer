@@ -1,5 +1,5 @@
 //
-//  SetCell.h
+//  FITSetCell.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetCell : UICollectionViewCell
-@property (nonatomic) BOOL isComplete;
+@interface FITSetCell : UICollectionViewCell
+
+@property (nonatomic, getter=isComplete) BOOL complete;
 @property (strong, nonatomic) IBOutlet UILabel *weight;
 @property (strong, nonatomic) IBOutlet UILabel *repetitions;
+
 @end

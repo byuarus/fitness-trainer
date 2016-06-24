@@ -1,20 +1,25 @@
 //
-//  FITWorkoutDataManager.m
+//  FITDataManager.m
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "FITWorkoutDataManager.h"
-#import "FITWorkoutDefaults.h"
+#import "FITDataManager.h"
+#import "FITExercise.h"
 
-@implementation FITWorkoutDataManager
+@implementation FITDataManager
+
 static NSUInteger localVersion;
 
++ (void)initialize {
+    [self sharedInstance];
+}
 
-+ (id)instance {
-    static FITWorkoutDataManager *instanceDataManager = nil;
+
++ (instancetype)sharedInstance {
+    static FITDataManager *instanceDataManager = nil;
     @synchronized(self) {
         if (instanceDataManager == nil)
             instanceDataManager = [[self alloc] init];
@@ -22,7 +27,7 @@ static NSUInteger localVersion;
     return instanceDataManager;
 }
 
-- (id)init {
+- (instancetype)init {
     if (self = [super init]) {
         [self loadFromLocalStorage];
         [self checkForUpdatesOnServer];
@@ -45,9 +50,9 @@ static NSUInteger localVersion;
 
 
 - (void)loadDefaultWorkoutsTemplate {
-    NSString *filePath =[[NSBundle mainBundle] pathForResource:@"WorkoutTemplate" ofType:@"json"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"WorkoutTemplate" ofType:@"json"];
     NSError *errorReadingFile;
-    NSString *fileContents =[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&errorReadingFile];
+    NSString *fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&errorReadingFile];
     
     if (errorReadingFile) {
         NSLog(@"ERROR:Error reading file: %@",errorReadingFile.localizedDescription);
@@ -69,9 +74,6 @@ static NSUInteger localVersion;
 - (void)initWorkoutDataWithDictionary:(NSDictionary *) WorkoutDataDictionary {
     localVersion = [[WorkoutDataDictionary objectForKey:@"version"] intValue];
     self.workoutList = [WorkoutDataDictionary objectForKey:@"Workouts"];
-    FITWorkoutDefaults *workoutDefaults = [FITWorkoutDefaults instance];
-    NSDictionary *defaultsDictionary = [WorkoutDataDictionary objectForKey:@"Defaults"];
-    [workoutDefaults updateWithDictionary:defaultsDictionary];
 }
 
 

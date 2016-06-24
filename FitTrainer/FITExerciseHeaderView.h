@@ -1,5 +1,5 @@
 //
-//  ExerciseHeaderView.h
+//  FITExerciseHeaderView.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExerciseHeaderView : UICollectionReusableView
+@interface FITExerciseHeaderView : UICollectionReusableView
+
 @property (strong, nonatomic) IBOutlet UILabel *exerciseName;
 @property (strong, nonatomic) IBOutlet UIButton *exerciseInfoButton;
 @property (strong, nonatomic) NSIndexPath *indexPath;
+
 @end

@@ -15,26 +15,26 @@
 ////////////////////////////////////////////////
 
 #import "FITWorkoutHelper.h"
-#import "FITWorkoutDataManager.h"
-#import "FITExerciseHelper.h"
-#import "FITUserDefaults.h"
+#import "FITDataManager.h"
+#import "FITExercise.h"
+#import "FITUser.h"
 
 @implementation FITWorkoutHelper
 
 NSDictionary *workoutDefaults;
 
 
-+ (id)newWorkoutOfType:(NSUInteger)typeOfWorkout {
-    FITUserDefaults *userDefaults = [FITUserDefaults instance];
++ (instancetype)newWorkoutOfType:(NSUInteger)typeOfWorkout {
+//    FITUser *userDefaults = [FITUser instance];
     FITWorkoutHelper *newWorkout = [[self alloc] init];
     [newWorkout loadWorkoutDefaultsForWorkoutType:typeOfWorkout];
     newWorkout.typeOfWorkout = typeOfWorkout;
     newWorkout.info = workoutDefaults[@"info"];
     newWorkout.name = workoutDefaults[@"name"];
-    newWorkout.userWeight = userDefaults.userWeight;
-    newWorkout.difficulty = userDefaults.difficulty;
-    newWorkout.staminaPowerRatio = userDefaults.staminaPowerRatio;
-    newWorkout.level = userDefaults.level;
+    newWorkout.userWeight = FITUser.weight;
+    newWorkout.difficulty = FITUser.difficulty;
+    newWorkout.staminaPowerRatio = FITUser.staminaPowerRatio;
+    newWorkout.level = FITUser.level;
     newWorkout.image = [newWorkout loadImageFromURLString:workoutDefaults[@"image"]];
     newWorkout.exerciseList = [newWorkout generateExerciseList];
     return newWorkout;
@@ -42,7 +42,7 @@ NSDictionary *workoutDefaults;
 
 
 - (void)loadWorkoutDefaultsForWorkoutType:(NSUInteger)typeOfWorkout {
-    NSArray *workoutList = [[FITWorkoutDataManager instance] workoutList];
+    NSArray *workoutList = [[FITDataManager instance] workoutList];
     workoutDefaults = workoutList[typeOfWorkout];
 }
 
@@ -54,7 +54,7 @@ NSDictionary *workoutDefaults;
     NSArray *availableExercises = [self availableExerciseList];
     NSMutableArray *selectedExercisesList = [NSMutableArray array];
     
-    for (FITExerciseHelper *exercise in availableExercises) {
+    for (FITExercise *exercise in availableExercises) {
         if (exercise.difficulty <= self.difficulty) {
             [selectedExercisesList addObject:exercise];
         }
@@ -70,7 +70,7 @@ NSDictionary *workoutDefaults;
     
     for (int i = 0; i < exerciseList.count; i++) {
         NSDictionary *exerciseDictionary = (NSDictionary *)exerciseList[i];
-        FITExerciseHelper *exercise = [FITExerciseHelper exerciseWithDictionary:exerciseDictionary];
+        FITExercise *exercise = [FITExercise exerciseWithDictionary:exerciseDictionary];
         [exerciseArray addObject:exercise];
     }
     

@@ -11,19 +11,22 @@
 #import <UIKit/UIKit.h>
 
 @interface FITWorkout : NSObject
+
 @property (nonatomic) NSUInteger typeOfWorkout;
 @property (nonatomic) CGFloat difficulty;
 @property (nonatomic) NSUInteger userWeight;
 @property (nonatomic) CGFloat staminaPowerRatio;
 @property (nonatomic) NSUInteger level;
-@property (nonatomic) bool isDayStarted;
-@property (nonatomic) bool isDayFinished;
+@property (nonatomic, getter=isDayStarted) BOOL dayStarted;
+@property (nonatomic, getter=isDayFinished) BOOL dayFinished;
 @property (strong, nonatomic) NSArray *exerciseList;
 @property (strong, nonatomic) NSDate *dateTimeStarted;
 @property (strong, nonatomic) NSDate *dateTimeFinished;
 @property (strong, nonatomic) NSString *info;
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *imageURLWithString;
 
++ (instancetype)newWorkoutOfType:(NSUInteger)typeOfWorkout;
 
 @end
 

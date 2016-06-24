@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "FITSet.h"
-#import "FITExerciseHelper.h"
+#import "FITExercise.h"
+@class FITExercise;
+@class FITSet;
 
 @interface FITSetHelper : FITSet
-+ (id)setWithExercise:(FITExerciseHelper *)exercise forIndex:(NSUInteger)numberOfSet;
+
++ (instancetype)setWithExercise:(FITExercise *)exercise forIndex:(NSUInteger)numberOfSet;
+
 @end

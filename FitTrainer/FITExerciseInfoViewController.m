@@ -1,27 +1,30 @@
 //
-//  ExerciseInfoViewController.m
+//  FITExerciseInfoViewController.m
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 19.06.16.
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "ExerciseInfoViewController.h"
+#import "FITExerciseInfoViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 @import AVFoundation;
 @import AVKit;
 
-@interface ExerciseInfoViewController ()
+@interface FITExerciseInfoViewController ()
 
 @end
 
-@implementation ExerciseInfoViewController
+@implementation FITExerciseInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.exerciseNameLable.text = [self.exerciseName capitalizedString];
-    self.exerciseInfoView.text = self.exerciseInfo;
-    self.exerciseImageView.image = self.exerciseImage;
-    self.title = [self.exerciseName capitalizedString];
+    self.exerciseNameLable.text = [self.exercise.name capitalizedString];
+    self.exerciseInfoView.text = self.exercise.info;
+    [self.exerciseImageView sd_setImageWithURL:[NSURL URLWithString:self.exercise.imageURLWithString]
+placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
+    self.title = [self.exercise.name capitalizedString];
 
     [self.exerciseWebView setAllowsInlineMediaPlayback:YES];
     [self.exerciseWebView setMediaPlaybackRequiresUserAction:NO];
@@ -46,7 +49,7 @@
                            </script>\
                            <iframe id='playerId' type='text/html' width='%f' height='%d' src='http://www.youtube.com/embed/%@?enablejsapi=1&rel=0&playsinline=1&autoplay=1' frameborder='0'>\
                            </body>\
-                           </html>", screenWidth+10, 190, self.exerciseVideoURLString];
+                           </html>", screenWidth+10, 190, self.exercise.youtubeVideoId];
     [self.exerciseWebView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle] resourceURL]];
 }
 

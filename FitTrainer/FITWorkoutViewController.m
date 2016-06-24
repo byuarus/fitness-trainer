@@ -6,25 +6,27 @@
 //  Copyright © 2016 Dmytro Malakhov. All rights reserved.
 //
 
-#import "WorkoutViewController.h"
-#import "FITWorkoutHelper.h"
-#import "FITExerciseHelper.h"
-#import "FITSetHelper.h"
-#import "SetCell.h"
-#import "ExerciseHeaderView.h"
-#import "ExerciseInfoViewController.h"
+#import "FITWorkoutViewController.h"
+#import "FITWorkout.h"
+#import "FITExercise.h"
+#import "FITSet.h"
+#import "FITSetCell.h"
+#import "FITExerciseHeaderView.h"
+#import "FITExerciseInfoViewController.h"
 
-@interface WorkoutViewController ()
+@interface FITWorkoutViewController ()
+
 @property (nonatomic, strong) NSArray *exerciseList;
-@property (nonatomic, strong) FITWorkoutHelper *workout;
+@property (nonatomic, strong) FITWorkout *workout;
+
 @end
 
-@implementation WorkoutViewController
+@implementation FITWorkoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.workout = [FITWorkoutHelper newWorkoutOfType:self.typeOfWorkout];
+    self.workout = [FITWorkout newWorkoutOfType:self.typeOfWorkout];
     self.exerciseList = [self.workout exerciseList];
     [self.collectionView setDataSource:self];
     [self.collectionView setDelegate:self];
@@ -41,10 +43,10 @@
 
 
 #pragma mark <UICollectionViewDataSource>
-- (void)configureCell:(SetCell *)cell forIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(FITSetCell *)cell forIndexPath:(NSIndexPath *)indexPath {
     
-    FITExerciseHelper *exercise = self.exerciseList[indexPath.section];
-    FITSetHelper *set = exercise.setsArray[indexPath.item];
+    FITExercise *exercise = self.exerciseList[indexPath.section];
+    FITSet *set = exercise.setsArray[indexPath.item];
     cell.weight.text = [NSString stringWithFormat:@"%lu lb",(unsigned long)set.weight];
     cell.weight.textAlignment = NSTextAlignmentCenter;
     cell.repetitions.text = [NSString stringWithFormat:@"%lu reps",(unsigned long)set.repetitions];
@@ -56,33 +58,33 @@
 }
 
 
+- (void)configureHeader:(FITExerciseHeaderView *)header forIndexPath:(NSIndexPath *)indexPath {
+    FITExercise* exercise = self.exerciseList[indexPath.section];
+    header.exerciseName.text = [[NSString stringWithFormat:@" %@",exercise.name] capitalizedString];
+}
+
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return self.exerciseList.count;
 }
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    SetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Set Cell" forIndexPath:indexPath];
-    cell.isComplete = !cell.isComplete;
+    FITSetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Set Cell" forIndexPath:indexPath];
+    cell.complete = !cell.isComplete;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    FITExerciseHelper *exercise = self.exerciseList[section];
+    FITExercise *exercise = self.exerciseList[section];
     return exercise.setsArray.count;
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    SetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Set Cell" forIndexPath:indexPath];
+    FITSetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Set Cell" forIndexPath:indexPath];
     [self configureCell:cell forIndexPath:indexPath];
     return cell;
-}
-
-
-- (void)configureHeader:(ExerciseHeaderView *)header forIndexPath:(NSIndexPath *)indexPath {
-    FITExerciseHelper* exercise = self.exerciseList[indexPath.section];
-    header.exerciseName.text = [[NSString stringWithFormat:@" %@",exercise.name] capitalizedString];
 }
 
 
@@ -90,7 +92,7 @@
     UICollectionReusableView *reusableview = nil;
     
     if (kind == UICollectionElementKindSectionHeader) {
-        ExerciseHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        FITExerciseHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
         [self configureHeader:headerView forIndexPath:indexPath];
         headerView.indexPath = indexPath;
         reusableview = headerView;
@@ -108,7 +110,7 @@
 #pragma mark Collection view layout things
 // Layout: Set cell size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    FITExerciseHelper *exercise = self.exerciseList[indexPath.section];
+    FITExercise *exercise = self.exerciseList[indexPath.section];
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGSize mElementSize = CGSizeMake((width-16-exercise.setsArray.count*4)/exercise.setsArray.count, 104);
     return mElementSize;
@@ -129,13 +131,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"ShowExerciseInfo"]) {
-        NSIndexPath *indexPath = [(ExerciseHeaderView *)[sender superview] indexPath];
-        ExerciseInfoViewController *destViewController = segue.destinationViewController;
-        FITExerciseHelper *exercise = self.exerciseList[indexPath.section];
-        destViewController.exerciseName = exercise.name;
-        destViewController.exerciseInfo = exercise.info;
-        destViewController.exerciseImage = exercise.image;
-        destViewController.exerciseVideoURLString = exercise.videoURLString;
+        NSIndexPath *indexPath = [(FITExerciseHeaderView *)[sender superview] indexPath];
+        FITExerciseInfoViewController *destViewController = segue.destinationViewController;
+        destViewController.exercise = self.exerciseList[indexPath.section];
     }
 }
 @end

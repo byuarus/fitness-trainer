@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  FITAppDelegate.h
 //  FitTrainer
 //
 //  Created by Dmitry Malakhov on 18.06.16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface FITAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
